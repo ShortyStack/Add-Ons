@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+{% if descriptions %}
+    <!-- If there are grades. Not NULL -->
+    <ul>
+        {% for description in descriptions %}
+            <li>Project Title: {{ description[0] }}, Description: {{ description[1]}}, Max Grade:{{description[2]}}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+</body>
+</html>
